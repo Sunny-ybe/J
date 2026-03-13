@@ -1,12 +1,13 @@
 :root {
-  --primary: #5f7f3c;
-  --background: #ece9de;
-  --text: #1f2a1a;
-  --muted: #5e6850;
-  --surface: #f9f7f0;
-  --border: #cfd4be;
+  --primary: #4f6b2f;
+  --background: #d7d3c3;
+  --text: #1e2718;
+  --muted: #5e6651;
+  --surface: #f2efe4;
+  --border: #b9bea9;
+  --accent: #2f3e1f;
   --radius: 14px;
-  --shadow: 0 10px 30px rgba(34, 45, 29, 0.14);
+  --shadow: 0 10px 30px rgba(28, 38, 22, 0.16);
 }
 
 /* Base */
@@ -20,12 +21,26 @@ html {
 
 body {
   margin: 0;
-  font: 16px/1.6 "Segoe UI", "Noto Sans", sans-serif;
+  font: 16px/1.6 "Trebuchet MS", "Segoe UI", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(1300px 700px at 12% -10%, #f7f3e5 0, transparent 70%),
-    radial-gradient(900px 500px at 88% 0%, #dbdec6 0, transparent 72%),
-    linear-gradient(180deg, #f2efe4 0%, var(--background) 100%);
+    radial-gradient(1300px 700px at 12% -10%, #f3efdf 0, transparent 70%),
+    radial-gradient(900px 500px at 88% 0%, #cfd3b7 0, transparent 72%),
+    linear-gradient(180deg, #e5e1d1 0%, var(--background) 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.2;
+  z-index: -1;
+  background:
+    radial-gradient(120px 80px at 10% 12%, #a6ad8d 0, transparent 70%),
+    radial-gradient(140px 100px at 42% 26%, #909c76 0, transparent 72%),
+    radial-gradient(120px 90px at 77% 58%, #b5ba9a 0, transparent 73%),
+    radial-gradient(130px 90px at 65% 82%, #8c9570 0, transparent 74%);
 }
 
 img {
@@ -90,10 +105,18 @@ a:hover {
   list-style: none;
 }
 
+.nav-list a {
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  border: 1px dashed transparent;
+}
+
 .nav-list a.is-active {
-  color: #2c3e1e;
+  color: var(--accent);
   font-weight: 700;
-  text-decoration: underline;
+  text-decoration: none;
+  border-color: var(--primary);
+  background: color-mix(in oklab, var(--surface), #c8cfb3 18%);
 }
 
 .site-footer {
@@ -106,11 +129,23 @@ a:hover {
 section {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 6px;
   box-shadow: var(--shadow);
   padding: 1.25rem;
   margin: 1.25rem 0;
   animation: riseIn 0.55s ease both;
+  position: relative;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(180deg, #6f8b47 0%, #4f6b2f 100%);
+  border-radius: 6px 0 0 6px;
 }
 
 main > section:nth-of-type(2) { animation-delay: 0.06s; }
@@ -122,6 +157,9 @@ h2,
 h3 {
   line-height: 1.2;
   margin-top: 0;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 p,
@@ -154,18 +192,20 @@ li {
   background: var(--primary);
   color: #fff;
   border: 0;
-  border-radius: 999px;
+  border-radius: 6px;
   padding: 0.55rem 1rem;
   font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   text-decoration: none;
-  box-shadow: 0 7px 18px rgba(73, 105, 46, 0.3);
+  box-shadow: 0 7px 18px rgba(63, 87, 39, 0.36);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .btn:hover {
   transform: translateY(-1px);
-  background: #526f35;
-  box-shadow: 0 10px 22px rgba(73, 105, 46, 0.38);
+  background: #425b27;
+  box-shadow: 0 10px 22px rgba(63, 87, 39, 0.45);
 }
 
 /* Timeline */
@@ -173,7 +213,7 @@ li {
   list-style: none;
   margin: 0;
   padding: 0 0 0 1.2rem;
-  border-left: 2px solid var(--border);
+  border-left: 2px dashed #93a179;
 }
 
 .timeline li {
@@ -189,7 +229,8 @@ li {
   width: 0.65rem;
   height: 0.65rem;
   border-radius: 999px;
-  background: var(--primary);
+  background: var(--accent);
+  border: 2px solid #c0c8ad;
 }
 
 .timeline-period {
@@ -206,9 +247,9 @@ li {
 
 .gallery-card {
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 6px;
   overflow: hidden;
-  background: #fff;
+  background: #f8f5ea;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -262,8 +303,9 @@ li {
 .lightbox-figure {
   margin: 0;
   width: min(940px, 100%);
-  background: #0f1727;
-  border-radius: 12px;
+  background: #202a1a;
+  border: 1px solid #60734a;
+  border-radius: 6px;
   overflow: hidden;
   color: #e8edf8;
 }
@@ -277,7 +319,7 @@ li {
   top: 1rem;
   right: 1rem;
   border: 0;
-  border-radius: 999px;
+  border-radius: 6px;
   padding: 0.45rem 0.8rem;
   font-weight: 700;
   background: #fff;
@@ -290,7 +332,7 @@ li {
   top: 50%;
   transform: translateY(-50%);
   border: 0;
-  border-radius: 999px;
+  border-radius: 6px;
   padding: 0.4rem 0.75rem;
   font-weight: 700;
   background: #fff;
@@ -350,10 +392,14 @@ textarea {
 
 button {
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: 6px;
   background: #fff;
   padding: 0.45rem 0.8rem;
   cursor: pointer;
+}
+
+button:hover {
+  background: #e4e7d4;
 }
 
 .admin-toolbar {
