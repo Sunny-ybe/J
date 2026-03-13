@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="container" aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="container"></main>
+
+  <footer class="site-footer">
+    <p id="footer-text">Built from content.json</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview dialog" aria-hidden="true" hidden>
+    <button id="lightbox-prev" class="lightbox-nav" type="button" aria-label="Previous image">Prev</button>
+    <button id="lightbox-next" class="lightbox-nav" type="button" aria-label="Next image">Next</button>
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close image preview">Close</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" src="" alt="" />
+      <figcaption id="lightbox-caption" class="lightbox-caption"></figcaption>
+    </figure>
+    <p id="lightbox-index" class="lightbox-index" aria-live="polite">0 / 0</p>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

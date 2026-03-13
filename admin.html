@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Content Editor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="admin-app" class="container">
+    <section class="stack">
+      <h1>Content Editor</h1>
+      <p class="muted">Edit content locally, then export a new content.json file.</p>
+      <div class="admin-toolbar">
+        <button id="add-section" type="button">Add Section</button>
+        <button id="export-json" class="btn" type="button">Export content.json</button>
+      </div>
+    </section>
+    <section class="stack">
+      <h2>Site</h2>
+      <label>Title<input id="site-title" required /></label>
+      <label>Tagline<input id="site-tagline" required /></label>
+    </section>
+    <div id="sections-editor" class="stack"></div>
+  </main>
+  <script src="admin.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+{
+  "site": {
+    "title": "Your Name Portfolio",
+    "tagline": "A concise line about your focus and values.",
+    "owner": "Your Name",
+    "description": "Single source of truth for all website content.",
+    "language": "en",
+    "updated": "2026-03-13"
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "title": "Hello, I am Your Name",
+      "subtitle": "Student, builder, and lifelong learner.",
+      "intro": "Replace this with a short personal introduction that explains who you are and what you do.",
+      "cta": {
+        "label": "Contact Me",
+        "href": "#contact"
+      },
+      "backgroundImage": "images/photo1.jpg",
+      "backgroundAlt": "Hero background placeholder image"
+    },
+    {
+      "id": "education",
+      "type": "education",
+      "title": "Education",
+      "layout": "timeline",
+      "items": [
+        {
+          "period": "2022 - 2026",
+          "institution": "Example University",
+          "program": "B.Sc. in Example Discipline",
+          "details": "Placeholder details about coursework, specialization, or projects."
+        },
+        {
+          "period": "2020 - 2022",
+          "institution": "Example High School",
+          "program": "Senior Secondary",
+          "details": "Placeholder details about notable subjects and activities."
+        }
+      ]
+    },
+    {
+      "id": "photos-1",
+      "type": "gallery",
+      "variant": "photos-1",
+      "title": "Photo Gallery One",
+      "images": [
+        {
+          "src": "images/photo2.jpg",
+          "alt": "Placeholder gallery image 2",
+          "caption": "Caption for photo 2"
+        },
+        {
+          "src": "images/photo3.jpg",
+          "alt": "Placeholder gallery image 3",
+          "caption": "Caption for photo 3"
+        },
+        {
+          "src": "images/photo4.jpg",
+          "alt": "Placeholder gallery image 4",
+          "caption": "Caption for photo 4"
+        },
+        {
+          "src": "images/photo5.jpg",
+          "alt": "Placeholder gallery image 5",
+          "caption": "Caption for photo 5"
+        }
+      ]
+    },
+    {
+      "id": "achievements",
+      "type": "achievements",
+      "style": "list",
+      "title": "Achievements",
+      "items": [
+        "Placeholder achievement one with measurable impact.",
+        "Placeholder achievement two with context.",
+        "Placeholder achievement three with date or rank."
+      ]
+    },
+    {
+      "id": "photos-2",
+      "type": "gallery",
+      "variant": "photos-2",
+      "title": "Photo Gallery Two",
+      "images": [
+        {
+          "src": "images/photo6.jpg",
+          "alt": "Placeholder gallery image 6",
+          "caption": "Caption for photo 6"
+        },
+        {
+          "src": "images/photo7.jpg",
+          "alt": "Placeholder gallery image 7",
+          "caption": "Caption for photo 7"
+        },
+        {
+          "src": "images/photo8.jpg",
+          "alt": "Placeholder gallery image 8",
+          "caption": "Caption for photo 8"
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "type": "sports",
+      "title": "Sports",
+      "summary": "Replace with your preferred sports and experience level.",
+      "items": [
+        {
+          "name": "Sport One",
+          "level": "Intermediate",
+          "note": "Placeholder note about role, team, or competition."
+        },
+        {
+          "name": "Sport Two",
+          "level": "Beginner",
+          "note": "Placeholder note about practice frequency or goals."
+        }
+      ]
+    },
+    {
+      "id": "hobbies",
+      "type": "hobbies",
+      "title": "Hobbies",
+      "items": [
+        "Reading",
+        "Photography",
+        "Travel",
+        "Music"
+      ],
+      "description": "Replace with a short paragraph about how these hobbies shape your perspective."
+    },
+    {
+      "id": "gallery-big",
+      "type": "gallery",
+      "variant": "masonry",
+      "title": "Big Masonry Gallery",
+      "images": [
+        {
+          "src": "images/photo9.jpg",
+          "alt": "Placeholder masonry image 9",
+          "caption": "Caption for photo 9"
+        },
+        {
+          "src": "images/photo10.jpg",
+          "alt": "Placeholder masonry image 10",
+          "caption": "Caption for photo 10"
+        },
+        {
+          "src": "images/photo11.jpg",
+          "alt": "Placeholder masonry image 11",
+          "caption": "Caption for photo 11"
+        },
+        {
+          "src": "images/photo12.jpg",
+          "alt": "Placeholder masonry image 12",
+          "caption": "Caption for photo 12"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "type": "about",
+      "title": "About",
+      "content": "Replace this with your longer bio. Include background, interests, and future goals.",
+      "highlights": [
+        "Placeholder highlight one",
+        "Placeholder highlight two",
+        "Placeholder highlight three"
+      ]
+    },
+    {
+      "id": "contact",
+      "type": "contact",
+      "title": "Contact",
+      "email": "you@example.com",
+      "phone": "+1-000-000-0000",
+      "location": "City, Country",
+      "social": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/your-profile"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/your-username"
+        }
+      ]
+    }
+  ]
+}
