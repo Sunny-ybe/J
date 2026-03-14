@@ -11,14 +11,14 @@
     {
       "id": "hero",
       "type": "hero",
-      "title": "Hello, I am Your Name",
-      "subtitle": "Student, builder, and lifelong learner.",
-      "intro": "Replace this with a short personal introduction that explains who you are and what you do.",
+      "title": "Hello, I am ABHISHEK",
+      "subtitle": "Officially I'm an officer but I consider myself a student and a lifelong learner.",
+      "intro": "Welcome to my little corner of the internet. This website is a glimpse into — my journey, experiences, interests, and the things that inspire me.  I’m Abhishek Kumar from Patna, Bihar. My area of interests are academics, sports, travel, or learning something new, I like to give my best in whatever I do.",
       "cta": {
         "label": "Contact Me",
         "href": "#contact"
       },
-      "backgroundImage": "images/photo1.jpg",
+      "backgroundImage": "images/photo1.png",
       "backgroundAlt": "Hero background placeholder image"
     },
     {
@@ -28,16 +28,16 @@
       "layout": "timeline",
       "items": [
         {
-          "period": "2022 - 2026",
-          "institution": "Example University",
-          "program": "B.Sc. in Example Discipline",
-          "details": "Placeholder details about coursework, specialization, or projects."
+          "period": "2021 - 2024",
+          "institution": "National Defence Academy, Khadakwasla",
+          "program": "B.Sc. Computer Science (awarded by JNU)",
+          "details": "3-year full-time, residential undergraduate program as undertrainee cadet of the Indian Army."
         },
         {
-          "period": "2020 - 2022",
-          "institution": "Example High School",
-          "program": "Senior Secondary",
-          "details": "Placeholder details about notable subjects and activities."
+          "period": "2013 - 2020",
+          "institution": "Sainik School Nalanda",
+          "program": "Middle and High School",
+          "details": "Physics, Chemistry, Math, English, Computer Science."
         }
       ]
     },
@@ -48,36 +48,25 @@
       "title": "Photo Gallery One",
       "images": [
         {
-          "src": "images/photo2.jpg",
+          "src": "images/photo2.png",
           "alt": "Placeholder gallery image 2",
-          "caption": "Caption for photo 2"
+          "caption": "My biggest support system: My family Father - Teacher Mother - Homemaker Younger siblings - Students"
         },
         {
-          "src": "images/photo3.jpg",
+          "src": "images/photo3.png",
           "alt": "Placeholder gallery image 3",
-          "caption": "Caption for photo 3"
+          "caption": "My biggest support system: My family Father - Teacher Mother - Homemaker Younger siblings - Students"
         },
         {
-          "src": "images/photo4.jpg",
+          "src": "images/photo4.png",
           "alt": "Placeholder gallery image 4",
-          "caption": "Caption for photo 4"
+          "caption": "Class 6 Sainik School 2nd from right"
         },
         {
-          "src": "images/photo5.jpg",
+          "src": "images/photo5.png",
           "alt": "Placeholder gallery image 5",
-          "caption": "Caption for photo 5"
+          "caption": "Class 9th"
         }
-      ]
-    },
-    {
-      "id": "achievements",
-      "type": "achievements",
-      "style": "list",
-      "title": "Achievements",
-      "items": [
-        "Placeholder achievement one with measurable impact.",
-        "Placeholder achievement two with context.",
-        "Placeholder achievement three with date or rank."
       ]
     },
     {
@@ -87,37 +76,37 @@
       "title": "Photo Gallery Two",
       "images": [
         {
-          "src": "images/photo6.jpg",
+          "src": "images/photo6.png",
           "alt": "Placeholder gallery image 6",
-          "caption": "Caption for photo 6"
+          "caption": "First sem JNU"
         },
         {
-          "src": "images/photo7.jpg",
+          "src": "images/photo7.png",
           "alt": "Placeholder gallery image 7",
-          "caption": "Caption for photo 7"
+          "caption": "Last sem at JNU"
         },
         {
-          "src": "images/photo8.jpg",
+          "src": "images/photo8.png",
           "alt": "Placeholder gallery image 8",
-          "caption": "Caption for photo 8"
+          "caption": "Just Me Playing Hockey"
         }
       ]
     },
     {
       "id": "sports",
       "type": "sports",
-      "title": "Sports",
-      "summary": "Replace with your preferred sports and experience level.",
+      "title": "Interests",
+      "summary": "Traveling  and Sports are one of the things I enjoy the most.",
       "items": [
         {
-          "name": "Sport One",
-          "level": "Intermediate",
-          "note": "Placeholder note about role, team, or competition."
+          "name": "Travelling",
+          "level": "Enthusiast",
+          "note": "It gives me the chance to see new places, experience different cultures, and create amazing memories."
         },
         {
-          "name": "Sport Two",
-          "level": "Beginner",
-          "note": "Placeholder note about practice frequency or goals."
+          "name": "Sports",
+          "level": "Hockey",
+          "note": "Always liked playing hockey and have been representing teams from across my career."
         }
       ]
     },
@@ -126,12 +115,12 @@
       "type": "hobbies",
       "title": "Hobbies",
       "items": [
-        "Reading",
-        "Photography",
-        "Travel",
-        "Music"
+        "⚽ Playing sports or at gym",
+        "✈️ Travelling and exploring new places",
+        "📚 Learning something new",
+        "🎧 Listening to music"
       ],
-      "description": "Replace with a short paragraph about how these hobbies shape your perspective."
+      "description": "When I’m not working or studying, you’ll probably find me doing one of these:."
     },
     {
       "id": "gallery-big",
@@ -140,55 +129,41 @@
       "title": "Big Masonry Gallery",
       "images": [
         {
-          "src": "images/photo9.jpg",
+          "src": "images/photo9.png",
           "alt": "Placeholder masonry image 9",
-          "caption": "Caption for photo 9"
+          "caption": "Somewhere on Earth"
         },
         {
-          "src": "images/photo10.jpg",
+          "src": "images/photo10.png",
           "alt": "Placeholder masonry image 10",
-          "caption": "Caption for photo 10"
+          "caption": "Awestruck by the mountains"
         },
         {
-          "src": "images/photo11.jpg",
+          "src": "images/photo11.png",
           "alt": "Placeholder masonry image 11",
-          "caption": "Caption for photo 11"
+          "caption": "Enjoying the beach"
         },
         {
-          "src": "images/photo12.jpg",
+          "src": "images/photo12.png",
           "alt": "Placeholder masonry image 12",
-          "caption": "Caption for photo 12"
+          "caption": "Fitness can't be secondary"
         }
       ]
     },
     {
       "id": "about",
       "type": "about",
-      "title": "About",
-      "content": "Replace this with your longer bio. Include background, interests, and future goals.",
+      "title": "The END - That's Me!",
+      "content": "This is just a small glimpse of my journey so far.",
       "highlights": [
-        "Placeholder highlight one",
-        "Placeholder highlight two",
-        "Placeholder highlight three"
+        "The best is yet to come!"
       ]
     },
     {
       "id": "contact",
       "type": "contact",
       "title": "Contact",
-      "email": "you@example.com",
-      "phone": "+1-000-000-0000",
-      "location": "City, Country",
-      "social": [
-        {
-          "label": "LinkedIn",
-          "url": "https://www.linkedin.com/in/your-profile"
-        },
-        {
-          "label": "GitHub",
-          "url": "https://github.com/your-username"
-        }
-      ]
+      "location": "India"
     }
   ]
 }

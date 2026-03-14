@@ -28,14 +28,16 @@ function renderList(s) { return `${shell(s)}${(s.summary || s.description) ? `<p
 function renderTextGallery(s) { const txt = t(s.summary || s.description || s.content); return `${shell(s)}${txt ? `<p>${txt}</p>` : ""}${s.images ? `<div class="gallery-grid">${(s.images || []).map(card).join("")}</div>` : ""}<ul>${(s.items || []).map((i) => `<li>${t(typeof i === "string" ? i : `${i.name || ""}${i.level ? ` (${i.level})` : ""}${i.note ? ` - ${i.note}` : ""}`)}</li>`).join("")}</ul></section>`; }
 function renderMasonry(s) { return `${shell(s)}<div class="masonry">${(s.images || []).map(card).join("")}</div></section>`; }
 function renderAbout(s) { return `${shell(s)}<p>${t(s.content)}</p><ul>${(s.highlights || []).map((h) => `<li>${t(h)}</li>`).join("")}</ul></section>`; }
-function renderContact(s) { return `${shell(s)}<p><strong>Email:</strong> <a href="mailto:${t(s.email)}">${t(s.email)}</a></p><p><strong>Phone:</strong> ${t(s.phone)}</p><p><strong>Location:</strong> ${t(s.location)}</p><ul>${(s.social || []).map((i) => `<li><a href="${t(i.url)}" target="_blank" rel="noreferrer">${t(i.label)}</a></li>`).join("")}</ul><form id="contact-form" class="stack" novalidate><label>Name<input name="name" required /></label><label>Email<input name="email" type="email" required /></label><label>Message<textarea name="message" rows="4" required></textarea></label><button class="btn" type="submit">Send Message</button></form></section>`; }
+function renderContact(s) {
+  return `${shell(s)}${s.email ? `<p><strong>Email:</strong> <a href="mailto:${t(s.email)}">${t(s.email)}</a></p>` : ""}${s.phone ? `<p><strong>Phone:</strong> ${t(s.phone)}</p>` : ""}${s.location ? `<p><strong>Location:</strong> ${t(s.location)}</p>` : ""}${(s.social || []).length ? `<ul>${(s.social || []).map((i) => `<li><a href="${t(i.url)}" target="_blank" rel="noreferrer">${t(i.label)}</a></li>`).join("")}</ul>` : ""}<form id="contact-form" class="stack" novalidate><label>Name<input name="name" required /></label><label>Email<input name="email" type="email" required /></label><label>Message<textarea name="message" rows="4" required></textarea></label><button class="btn" type="submit">Send Message</button></form></section>`;
+}
 
 function getRenderer(s) {
   if (s.type === "hero") return renderHero;
   if (s.type === "timeline" || s.type === "education") return renderTimeline;
   if (s.type === "masonry" || s.variant === "masonry") return renderMasonry;
   if (s.type === "gallery") return renderGallery;
-  if (s.type === "list" || s.type === "achievements") return renderList;
+  if (s.type === "list") return renderList;
   if (s.type === "text+gallery" || s.type === "sports" || s.type === "hobbies") return renderTextGallery;
   if (s.type === "about") return renderAbout;
   if (s.type === "contact") return renderContact;
@@ -78,7 +80,7 @@ function setupContactForm() {
     if (!name || !message) return toast("Please complete all fields.");
     toast("Thanks. Opening your mail app.");
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-    window.location.href = `mailto:you@example.com?subject=Contact%20from%20Site&body=${body}`;
+    window.location.href = `mailto:?subject=Contact%20from%20Site&body=${body}`;
   });
 }
 

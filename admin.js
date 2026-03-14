@@ -34,7 +34,7 @@ function imgEditor(si, s) {
 }
 
 function sectionTextFields(si, s) {
-	const keys = ["subtitle", "intro", "summary", "description", "content", "email", "phone", "location"];
+	const keys = ["subtitle", "intro", "summary", "description", "content", "location"];
 	return keys.filter((k) => k in s).map((k) => `<label>${k}<textarea data-si="${si}" data-key="${k}" rows="2">${A.t(s[k])}</textarea></label>`).join("");
 }
 
